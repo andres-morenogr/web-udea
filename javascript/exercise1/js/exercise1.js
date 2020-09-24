@@ -1,6 +1,6 @@
 function isPanagram() {
   const panagram = "abcdefghijklmnopqrstuvwxyz"
-  const textToVerify = document.getElementById("validate").value;
+  let textToVerify = document.getElementById("validate").value;
   let result = document.getElementById("result");
   let processedText = processText(textToVerify);
   if(panagram.localeCompare(processedText) === 0) {
